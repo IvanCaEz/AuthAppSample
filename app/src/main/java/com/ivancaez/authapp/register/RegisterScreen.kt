@@ -49,6 +49,7 @@ import com.ivancaez.authapp.R
 import com.ivancaez.authapp.core.presentation.generic_components.IconOutlinedTextField
 import com.ivancaez.authapp.core.presentation.generic_components.PasswordOutlinedTextField
 import com.ivancaez.authapp.core.presentation.navigation.LoginScreen
+import com.ivancaez.authapp.ui.theme.Purple40
 
 @Composable
 fun RegisterScreen(navController: NavHostController) {
@@ -72,7 +73,6 @@ fun RegisterScreen(navController: NavHostController) {
     val isRepeatPasswordVisible by registerViewModel.isRepeatPasswordVisible.collectAsStateWithLifecycle()
     val repeatPasswordErrorText by registerViewModel.passwordRepeatErrorText.collectAsStateWithLifecycle()
 
-    val userCanSignUp by registerViewModel.userCanSignUp.collectAsStateWithLifecycle()
     // Loading state
     val isLoading by registerViewModel.isLoading.collectAsStateWithLifecycle()
     // Auth
@@ -252,7 +252,7 @@ fun RegisterScreen(navController: NavHostController) {
                 contentPadding = PaddingValues(10.dp),
                 onClick = registerViewModel::onSignUpButtonClick ,
                 colors = ButtonDefaults.elevatedButtonColors(
-                    containerColor = Color.Blue,
+                    containerColor = MaterialTheme.colorScheme.primary,
                     contentColor = Color.White),
                 shape = RoundedCornerShape(16.dp),
                 elevation = ButtonDefaults.elevatedButtonElevation(12.dp)

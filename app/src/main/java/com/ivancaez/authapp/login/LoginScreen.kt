@@ -47,6 +47,8 @@ import com.ivancaez.authapp.core.presentation.generic_components.IconOutlinedTex
 import com.ivancaez.authapp.core.presentation.generic_components.PasswordOutlinedTextField
 import com.ivancaez.authapp.core.presentation.navigation.ProfileScreen
 import com.ivancaez.authapp.core.presentation.navigation.RegisterScreen
+import com.ivancaez.authapp.ui.theme.Purple40
+import com.ivancaez.authapp.ui.theme.Purple80
 
 @Composable
 fun LoginScreen(navController: NavHostController, loginViewModel: LoginViewModel) {
@@ -179,7 +181,7 @@ fun LoginScreen(navController: NavHostController, loginViewModel: LoginViewModel
                 contentPadding = PaddingValues(10.dp),
                 onClick = loginViewModel::onLoginButtonClick ,
                 colors = ButtonDefaults.elevatedButtonColors(
-                    containerColor = Color.Blue,
+                    containerColor = MaterialTheme.colorScheme.primary,
                     contentColor = Color.White),
                 shape = RoundedCornerShape(16.dp),
                 elevation = ButtonDefaults.elevatedButtonElevation(12.dp)
