@@ -6,7 +6,7 @@
 - [Images](#images)
 
 ## Introduction
-Android login and signup system made in Jetpack Compose with Retrofit calls to an Spring Boot backend.
+Android login and signup system made in Jetpack Compose with Retrofit calls to an [Spring Boot backend](https://github.com/IvanCaEz/AuthSB).
 
 ## Technologies
 - [Kotlin](https://kotlinlang.org) based, using [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) + [Flow](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/) for asynchronous operations.
